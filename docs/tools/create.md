@@ -86,7 +86,7 @@ npm run build:watch
 ```html
 
 <body>
-<script src="../dist/common-utils.js"></script>
+<script src="dist/common-utils.js"></script>
 <script>
     CommonUtils.test()
 </script>
