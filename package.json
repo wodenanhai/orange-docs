@@ -176,5 +176,8 @@
     "which": "^2.0.2",
     "yoctocolors": "^2.1.1"
   },
-  "description": ""
+  "description": "",
+  "resolutions": {
+    "fsevents": "2.3.2"
+  }
 }
