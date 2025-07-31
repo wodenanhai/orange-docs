@@ -15,17 +15,11 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install Yarn
-        run: npm install -g yarn
-
       - name: Install dependencies
-        env:
-          YARN_IGNORE_PLATFORM: 1  # 核心解决方案
-        run: |
-          yarn install --ignore-optional
+        run: npm install
 
       - name: Build
-        run: yarn docs:build
+        run: npm docs:build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
