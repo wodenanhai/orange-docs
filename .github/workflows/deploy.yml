@@ -22,7 +22,7 @@ jobs:
         env:
           YARN_IGNORE_PLATFORM: 1  # 核心解决方案
         run: |
-          yarn install --ignore-optional --frozen-lockfile
+          yarn install --ignore-optional --ignore-platform --frozen-lockfile
 
       - name: Build
         run: yarn docs:build
