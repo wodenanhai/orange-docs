@@ -10,12 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Clean lock files
-        run: |
-          rm -f package-lock.json
-          rm -f yarn.lock
-
-      - uses: actions/setup-node@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
           node-version: 20
 
@@ -23,7 +19,10 @@ jobs:
         run: npm install -g yarn
 
       - name: Install dependencies
-        run: yarn install --ignore-optional --frozen-lockfile
+        env:
+          YARN_IGNORE_PLATFORM: 1  # 核心解决方案
+        run: |
+          yarn install --ignore-optional --frozen-lockfile
 
       - name: Build
         run: yarn docs:build
