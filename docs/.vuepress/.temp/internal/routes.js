@@ -2,8 +2,8 @@ export const redirects = JSON.parse("{}")
 
 export const routes = Object.fromEntries([
   ["/", { loader: () => import(/* webpackChunkName: "index.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/index.html.js"), meta: {"title":""} }],
-  ["/html/", { loader: () => import(/* webpackChunkName: "html_index.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/html/index.html.js"), meta: {"title":"一、HTML 的 src 和 href 属性有什么区别？"} }],
   ["/vue2/", { loader: () => import(/* webpackChunkName: "vue2_index.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/vue2/index.html.js"), meta: {"title":""} }],
+  ["/html/", { loader: () => import(/* webpackChunkName: "html_index.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/html/index.html.js"), meta: {"title":"一、HTML 的 src 和 href 属性有什么区别？"} }],
   ["/tools/buildVuePress.html", { loader: () => import(/* webpackChunkName: "tools_buildVuePress.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/tools/buildVuePress.html.js"), meta: {"title":"使用VuePress搭建在线文档网站"} }],
   ["/tools/create.html", { loader: () => import(/* webpackChunkName: "tools_create.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/tools/create.html.js"), meta: {"title":"1、创建工具包项目"} }],
   ["/tools/", { loader: () => import(/* webpackChunkName: "tools_index.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/tools/index.html.js"), meta: {"title":"安装插件"} }],
