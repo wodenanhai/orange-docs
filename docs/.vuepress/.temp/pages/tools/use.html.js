@@ -1,3 +1,16 @@
 import comp from "/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/tools/use.html.vue"
 const data = JSON.parse("{\"path\":\"/tools/use.html\",\"title\":\"3.使用自定义工具包\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"3.1.下载工具包\",\"slug\":\"_3-1-下载工具包\",\"link\":\"#_3-1-下载工具包\",\"children\":[]},{\"level\":2,\"title\":\"3.2.网页中引入并使用\",\"slug\":\"_3-2-网页中引入并使用\",\"link\":\"#_3-2-网页中引入并使用\",\"children\":[]},{\"level\":2,\"title\":\"3.3.模块化引入并使用\",\"slug\":\"_3-3-模块化引入并使用\",\"link\":\"#_3-3-模块化引入并使用\",\"children\":[]}],\"git\":{\"updatedTime\":1753945934000,\"contributors\":[{\"name\":\"zhangcheng\",\"email\":\"2778162192@qq.com\",\"commits\":1}]},\"filePathRelative\":\"tools/use.md\"}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}
