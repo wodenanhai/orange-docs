@@ -12,7 +12,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: npm install --no-optional
+      - run: npm install --omit=optional  # 新版本 npm 的语法
       - run: npm run docs:build
       - name: Deploy to GH Pages
         uses: peaceiris/actions-gh-pages@v3
