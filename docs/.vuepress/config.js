@@ -37,11 +37,7 @@ export default defineUserConfig({
                     // 相对路径会自动追加子路径前缀
                     children: [
                         {
-                            text: "111",
-                            link: "index.md"
-                        },
-                        {
-                            text: "111",
+                            text: "常用方法",
                             link: "index.md"
                         },
                     ],
