@@ -14,8 +14,7 @@ export default defineUserConfig({
                     {text: "vue2", link: "/vue2/index"},
                     {text: "vue3", link: "/vue3/index"},
                     {text: "webpack", link: "/webpack/index"},
-                    {text: "html", link: "/html/index"},
-                    {text: "express", link: "/express/index"},
+                    {text: "html", link: "/html/index"}
                 ]
             },
             {
@@ -128,19 +127,7 @@ export default defineUserConfig({
                         },
                     ],
                 },
-            ],
-            '/express/': [
-                {
-                    text: 'Express学习',
-                    // 相对路径会自动追加子路径前缀
-                    children: [
-                        {
-                            text: "一、HTML 的 src 和 href 属性有什么区别？",
-                            link: "index.md"
-                        },
-                    ],
-                },
-            ],
+            ]
         },
     }),
     lang: "zh-CN",
