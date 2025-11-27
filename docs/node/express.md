@@ -12,7 +12,7 @@
 
 ``` javascript
 npm i -g express-generator@4 //全局安装 
-mkdir ~/Developer && cd ~/Developer //创建并进入目录
+mkdir ~/node && cd ~/node //创建并进入目录
 ```
 
 创建项目
