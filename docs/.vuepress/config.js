@@ -138,29 +138,24 @@ export default defineUserConfig({
                     link: "index.md",
                     children: [
                         {
-                            text: "node安装",
+                            text: "使用 nvm 安装 Node.js",
                             link: "install.md"
+                        },
+                        {
+                            text: "编辑器与创建Express项目",
+                            link: "express.md"
                         },
                     ],
                 },
-                {
-                    text: '11',
-                    children: [
-                        {
-                            text: "1、11",
-                            link: "install.md"
-                        },
-                    ],
-                },
-                {
-                    text: "1",
-                    children: [
-                        {
-                            text: "1",
-                            link: "install.md"
-                        },
-                    ]
-                }
+                // {
+                //     text: "1",
+                //     children: [
+                //         {
+                //             text: "1",
+                //             link: "install.md"
+                //         },
+                //     ]
+                // }
             ],
         },
     }),

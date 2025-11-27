@@ -1,6 +1,6 @@
 # 安装（nvm）
 
-### 查看node.js LTS版本，即长期支持版本
+#### 查看node.js LTS版本，即长期支持版本
 
 + Windows 运行 :nvm list available
 + macOS 运行 :nvm ls-remote
@@ -9,7 +9,7 @@
 nvm install 20.12.2
 ```
 
-### 查看安装过的版本
+#### 查看安装过的版本
 
 + Windows
 ```
@@ -19,7 +19,7 @@ nvm list
 ```
 nvm ls
 ```
-### 切换版本
+#### 切换版本
 
 + Windows
 ```
@@ -29,7 +29,7 @@ nvm use 20.12.2
 ```
 nvm alias default 20.12.2
 ```
-# 配置npm中国镜像
+#### 配置npm中国镜像
 
 ```
 npm config set registry https://registry.npmmirror.com/
