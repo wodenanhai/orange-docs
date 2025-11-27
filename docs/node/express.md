@@ -39,3 +39,15 @@ router.get('/', function(req, res, next) {
 ```
 
 修改好后刷新浏览器无反应，运行还是之前的东西，是因为不会主动监听修改，需要重启服务，并删除index.html
+
+#### 更好的解决办法——nodemon
+
+```
+npm i nodemon
+```
+
+打开package.json ，修改
+
+```
+"start": "nodemon ./bin/www"
+```

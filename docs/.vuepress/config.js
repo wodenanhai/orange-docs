@@ -29,6 +29,10 @@ export default defineUserConfig({
                 text: "node指南",
                 link: '/node/index'
             },
+            {
+                text: "小技巧",
+                link: '/tips/index'
+            },
             // {
             //     text: "旅游",
             //     link: 'https://www.aitlin.top/sanya'
@@ -146,6 +150,21 @@ export default defineUserConfig({
                             link: "express.md"
                         },
                     ],
+                },
+                // {
+                //     text: "1",
+                //     children: [
+                //         {
+                //             text: "1",
+                //             link: "install.md"
+                //         },
+                //     ]
+                // }
+            ],
+            '/tips/': [
+                {
+                    text: '小技巧',
+                    link: "index.md"
                 },
                 // {
                 //     text: "1",
