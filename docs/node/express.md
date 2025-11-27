@@ -46,7 +46,7 @@ router.get('/', function(req, res, next) {
 npm i nodemon
 ```
 
-打开package.json ，修改
+打开package.json ，修改下以下命令即可
 
 ```
 "start": "nodemon ./bin/www"
