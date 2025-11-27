@@ -30,3 +30,12 @@ npm start
 
 #### 四、使用 nodemon 监听 Express 项目
 
+想要返回JSON格式的数据，routes/index.js 里，修改
+
+``` javascript
+router.get('/', function(req, res, next) {
+  res.json( { message: 'hello nodejs' });
+});
+```
+
+修改好后刷新浏览器无反应，运行还是之前的东西，是因为不会主动监听修改，需要重启服务，并删除index.html

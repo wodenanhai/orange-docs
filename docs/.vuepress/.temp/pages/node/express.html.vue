@@ -15,6 +15,12 @@
 <span class="line">npm start</span>
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="四、使用-nodemon-监听-express-项目" tabindex="-1"><a class="header-anchor" href="#四、使用-nodemon-监听-express-项目"><span>四、使用 nodemon 监听 Express 项目</span></a></h4>
+<p>想要返回JSON格式的数据，routes/index.js 里，修改</p>
+<div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js"><pre v-pre><code class="language-javascript"><span class="line">router<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></span>
+<span class="line">  res<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span> <span class="token punctuation">{</span> <span class="token literal-property property">message</span><span class="token operator">:</span> <span class="token string">'hello nodejs'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<span class="line"><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>修改好后刷新浏览器无反应，运行还是之前的东西，是因为不会主动监听修改，需要重启服务，并删除index.html</p>
 </div></template>
 
 
