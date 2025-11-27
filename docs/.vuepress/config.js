@@ -150,6 +150,30 @@ export default defineUserConfig({
                         }, {
                             text: "项目结构与代码解析",
                             link: "project.md"
+                        }, {
+                            text: "使用Docker运行MySQL",
+                            link: "docker_mysql.md"
+                        }, {
+                            text: "创建数据库与数据表",
+                            link: "createDateBase.md"
+                        }, {
+                            text: "常用SQL语句一",
+                            link: ""
+                        }, {
+                            text: "常用SQL语句二",
+                            link: ""
+                        }, {
+                            text: "Sequelize ORM",
+                            link: ""
+                        }, {
+                            text: "迁移与种子",
+                            link: ""
+                        }, {
+                            text: "接口1",
+                            link: ""
+                        }, {
+                            text: "接口2",
+                            link: ""
                         },
                     ],
                 },

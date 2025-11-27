@@ -3,19 +3,20 @@ export const redirects = JSON.parse("{}")
 export const routes = Object.fromEntries([
   ["/", { loader: () => import(/* webpackChunkName: "index.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/index.html.js"), meta: {"title":""} }],
   ["/html/", { loader: () => import(/* webpackChunkName: "html_index.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/html/index.html.js"), meta: {"title":"一、HTML 的 src 和 href 属性有什么区别？"} }],
+  ["/node/docker_mysql.html", { loader: () => import(/* webpackChunkName: "node_docker_mysql.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/node/docker_mysql.html.js"), meta: {"title":""} }],
+  ["/node/express.html", { loader: () => import(/* webpackChunkName: "node_express.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/node/express.html.js"), meta: {"title":""} }],
+  ["/node/", { loader: () => import(/* webpackChunkName: "node_index.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/node/index.html.js"), meta: {"title":"NodeJS优势"} }],
+  ["/node/install.html", { loader: () => import(/* webpackChunkName: "node_install.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/node/install.html.js"), meta: {"title":"安装（nvm）"} }],
+  ["/node/project.html", { loader: () => import(/* webpackChunkName: "node_project.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/node/project.html.js"), meta: {"title":""} }],
   ["/vue2/", { loader: () => import(/* webpackChunkName: "vue2_index.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/vue2/index.html.js"), meta: {"title":"基础面试题一"} }],
   ["/tools/buildVuePress.html", { loader: () => import(/* webpackChunkName: "tools_buildVuePress.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/tools/buildVuePress.html.js"), meta: {"title":"使用VuePress搭建在线文档网站"} }],
   ["/tools/create.html", { loader: () => import(/* webpackChunkName: "tools_create.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/tools/create.html.js"), meta: {"title":"1、创建工具包项目"} }],
   ["/tools/", { loader: () => import(/* webpackChunkName: "tools_index.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/tools/index.html.js"), meta: {"title":"安装插件"} }],
   ["/tools/publish.html", { loader: () => import(/* webpackChunkName: "tools_publish.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/tools/publish.html.js"), meta: {"title":"2、发布到npm中央仓库"} }],
   ["/tools/use.html", { loader: () => import(/* webpackChunkName: "tools_use.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/tools/use.html.js"), meta: {"title":"3.使用自定义工具包"} }],
-  ["/vue3/", { loader: () => import(/* webpackChunkName: "vue3_index.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/vue3/index.html.js"), meta: {"title":""} }],
   ["/webpack/", { loader: () => import(/* webpackChunkName: "webpack_index.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/webpack/index.html.js"), meta: {"title":""} }],
   ["/tips/", { loader: () => import(/* webpackChunkName: "tips_index.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/tips/index.html.js"), meta: {"title":""} }],
-  ["/node/express.html", { loader: () => import(/* webpackChunkName: "node_express.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/node/express.html.js"), meta: {"title":""} }],
-  ["/node/", { loader: () => import(/* webpackChunkName: "node_index.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/node/index.html.js"), meta: {"title":"NodeJS优势"} }],
-  ["/node/install.html", { loader: () => import(/* webpackChunkName: "node_install.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/node/install.html.js"), meta: {"title":"安装（nvm）"} }],
-  ["/node/project.html", { loader: () => import(/* webpackChunkName: "node_project.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/node/project.html.js"), meta: {"title":""} }],
+  ["/vue3/", { loader: () => import(/* webpackChunkName: "vue3_index.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/vue3/index.html.js"), meta: {"title":""} }],
   ["/tools/customize/array.html", { loader: () => import(/* webpackChunkName: "tools_customize_array.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/tools/customize/array.html.js"), meta: {"title":"2、数组相关"} }],
   ["/tools/customize/function.html", { loader: () => import(/* webpackChunkName: "tools_customize_function.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/tools/customize/function.html.js"), meta: {"title":"1、函数相关"} }],
   ["/tools/customize/handleAjax.html", { loader: () => import(/* webpackChunkName: "tools_customize_handleAjax.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/tools/customize/handleAjax.html.js"), meta: {"title":"6.手写ajax请求函数"} }],
@@ -26,6 +27,7 @@ export const routes = Object.fromEntries([
   ["/tools/customize/object.html", { loader: () => import(/* webpackChunkName: "tools_customize_object.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/tools/customize/object.html.js"), meta: {"title":"3.对象相关"} }],
   ["/tools/customize/string.html", { loader: () => import(/* webpackChunkName: "tools_customize_string.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/tools/customize/string.html.js"), meta: {"title":"4.字符串相关"} }],
   ["/404.html", { loader: () => import(/* webpackChunkName: "404.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/404.html.js"), meta: {"title":""} }],
+  ["/node/createDateBase.html", { loader: () => import(/* webpackChunkName: "node_createDateBase.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/node/createDateBase.html.js"), meta: {"title":""} }],
 ]);
 
 if (import.meta.webpackHot) {

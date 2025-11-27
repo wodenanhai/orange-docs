@@ -1,5 +1,5 @@
 import comp from "/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/node/project.html.vue"
-const data = JSON.parse("{\"path\":\"/node/project.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"git\":{},\"filePathRelative\":\"node/project.md\"}")
+const data = JSON.parse("{\"path\":\"/node/project.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"git\":{\"updatedTime\":1764212874000,\"contributors\":[{\"name\":\"zhangcheng\",\"username\":\"zhangcheng\",\"email\":\"2778162192@qq.com\",\"commits\":1,\"url\":\"https://github.com/zhangcheng\"}],\"changelog\":[{\"hash\":\"4debf41ffced8bf11a8963e07098af127efe48aa\",\"time\":1764212874000,\"email\":\"2778162192@qq.com\",\"author\":\"zhangcheng\",\"message\":\"commit\"}]},\"filePathRelative\":\"node/project.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {
