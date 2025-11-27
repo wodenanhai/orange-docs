@@ -139,7 +139,6 @@ export default defineUserConfig({
             '/node/': [
                 {
                     text: 'NodeJS',
-                    link: "index.md",
                     children: [
                         {
                             text: "使用 nvm 安装 Node.js",
@@ -148,6 +147,9 @@ export default defineUserConfig({
                         {
                             text: "编辑器与创建Express项目",
                             link: "express.md"
+                        }, {
+                            text: "项目结构与代码解析",
+                            link: "project.md"
                         },
                     ],
                 },
