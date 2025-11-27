@@ -25,6 +25,10 @@ export default defineUserConfig({
                 text: "自定义工具函数库",
                 link: '/tools/index'
             },
+            {
+                text: "node指南",
+                link: '/node/index'
+            },
             // {
             //     text: "旅游",
             //     link: 'https://www.aitlin.top/sanya'
@@ -127,7 +131,37 @@ export default defineUserConfig({
                         },
                     ],
                 },
-            ]
+            ],
+            '/node/': [
+                {
+                    text: 'NodeJS',
+                    link: "index.md",
+                    children: [
+                        {
+                            text: "node安装",
+                            link: "install.md"
+                        },
+                    ],
+                },
+                {
+                    text: '11',
+                    children: [
+                        {
+                            text: "1、11",
+                            link: "install.md"
+                        },
+                    ],
+                },
+                {
+                    text: "1",
+                    children: [
+                        {
+                            text: "1",
+                            link: "install.md"
+                        },
+                    ]
+                }
+            ],
         },
     }),
     lang: "zh-CN",
