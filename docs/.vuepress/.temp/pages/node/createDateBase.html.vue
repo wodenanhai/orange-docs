@@ -8,6 +8,125 @@
 <li>复数形式：最后的s，这个复数形式，也是必须的。如果你的命名掉了s，在后面我们使用Node.js查询数据的时候，它也会无法找到这张表的。</li>
 </ul>
 <h4 id="mysql-中常见的数据类型" tabindex="-1"><a class="header-anchor" href="#mysql-中常见的数据类型"><span>MySQL 中常见的数据类型</span></a></h4>
+<h4 id="整数类型" tabindex="-1"><a class="header-anchor" href="#整数类型"><span>整数类型</span></a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">字节大小</th>
+<th style="text-align:center">有符号范围（Signed）</th>
+<th style="text-align:center">无符号范围（Unsigned）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">TINYINT</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">-128 ~ 127</td>
+<td style="text-align:center">0 ~ 255</td>
+</tr>
+<tr>
+<td style="text-align:center">SMALLINT</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">-32768 ~ 32767</td>
+<td style="text-align:center">0 ~ 65535</td>
+</tr>
+<tr>
+<td style="text-align:center">MEDIUMINT</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">-8388608 ~ 8388607</td>
+<td style="text-align:center">0 ~ 16777215</td>
+</tr>
+<tr>
+<td style="text-align:center">INT/INTEGER</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">-2147483648 ~2147483647</td>
+<td style="text-align:center">0 ~ 4294967295</td>
+</tr>
+<tr>
+<td style="text-align:center">BIGINT</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">-9223372036854775808 ~ 9223372036854775807</td>
+<td style="text-align:center">0 ~ 18446744073709551615</td>
+</tr>
+</tbody>
+</table>
+<p>这里有各种各样的整数，当然最常用的就是INT了。另外这里又分为有符号和无符号，其实很简单，符号就是负号。这里的无符号也就是说，没有负数。</p>
+<h4 id="字符串类型" tabindex="-1"><a class="header-anchor" href="#字符串类型"><span>字符串类型</span></a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">说明</th>
+<th style="text-align:center">使用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">CHAR</td>
+<td style="text-align:center">固定长度，小型固定长度的数据</td>
+<td style="text-align:center">身份证号、手机号、电话、密码</td>
+</tr>
+<tr>
+<td style="text-align:center">VARCHAR</td>
+<td style="text-align:center">可变长度，小型数据</td>
+<td style="text-align:center">姓名、地址、品牌、型号、用户的评论、文章的标题</td>
+</tr>
+<tr>
+<td style="text-align:center">TEXT</td>
+<td style="text-align:center">可变长度，字符个数大于 4000</td>
+<td style="text-align:center">存储文章正文</td>
+</tr>
+<tr>
+<td style="text-align:center">LONGTEXT</td>
+<td style="text-align:center">可变长度，超大型文本数据</td>
+<td style="text-align:center">存储超大型文本数据</td>
+</tr>
+</tbody>
+</table>
+<p>字符串也有很多种，常用的是char、varchar和text。这里还有个char需要注意，它和varchar有一定区别。</p>
+<ul>
+<li>char：char是固定长度的，例如你选择char，并设定成 10 位长度。哪怕当你只存入 2 位长度的字符，那么依然会占据 10 位的空间。</li>
+<li>varchar:而varchar，指定的是最大长度，而不是固定长度。它的实际存储大小，取决于存储的内容的长度，所以一些不固定长度的内容，例如用户的姓名，文章的标题这些长度不固定的东西，就非常适合了。</li>
+<li>性能：另外在性能上，char的速度更快一些，缺点是char的占用空间也更大一些。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">时间类型</th>
+<th style="text-align:center">字节大小</th>
+<th style="text-align:center">示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">DATE</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">'2020-01-01'</td>
+</tr>
+<tr>
+<td style="text-align:center">TIME</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">'12:29:59'</td>
+</tr>
+<tr>
+<td style="text-align:center">DATETIME</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">'2020-01-01 12:29:59'</td>
+</tr>
+<tr>
+<td style="text-align:center">YEAR</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">'2017'</td>
+</tr>
+<tr>
+<td style="text-align:center">TIMESTAMP</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">'1970-01-01 00:00:01' UTC ~ '2038-01-01 00:00:01' UTC</td>
+</tr>
+</tbody>
+</table>
+<p>一般最常见的就是datetime了，因为日期和具体时间都记录的清清楚楚了。</p>
 <h4 id="主键是什么" tabindex="-1"><a class="header-anchor" href="#主键是什么"><span>主键是什么？</span></a></h4>
 <h4 id="给数据表-增加标题和内容" tabindex="-1"><a class="header-anchor" href="#给数据表-增加标题和内容"><span>给数据表，增加标题和内容</span></a></h4>
 </div></template>
