@@ -144,7 +144,10 @@ export default defineUserConfig({
                     children: [
                         {
                             text: "同步异步有什么区别？",
-                            link: "index.md"
+                            link: "async.md"
+                        }, {
+                            text: "首屏加载速度慢怎么解决？",
+                            link: "speed.md"
                         },
                     ],
                 },
