@@ -148,6 +148,12 @@ export default defineUserConfig({
                         }, {
                             text: "首屏加载速度慢怎么解决？",
                             link: "speed.md"
+                        }, {
+                            text: "前端鉴权的几种方式？",
+                            link: "Authentication.md"
+                        }, {
+                            text: "说说qiankun是咋回事？",
+                            link: "qiankun.md"
                         },
                     ],
                 },
