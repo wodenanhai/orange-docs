@@ -14,7 +14,8 @@ export default defineUserConfig({
                     {text: "vue2", link: "/vue2/index"},
                     {text: "vue3", link: "/vue3/index"},
                     {text: "webpack", link: "/webpack/index"},
-                    {text: "html", link: "/html/index"}
+                    {text: "html", link: "/html/index"},
+                    {text:'common',link:"/common/index"}
                 ]
             },
             {
