@@ -180,7 +180,7 @@ export default defineUserConfig({
                             link: "createDateBase.md"
                         }, {
                             text: "常用SQL语句一",
-                            link: ""
+                            link: "curd.md"
                         }, {
                             text: "常用SQL语句二",
                             link: ""
