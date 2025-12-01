@@ -6,25 +6,25 @@
 
 当我们网络请求比较多的时候，浏览器会增加⾸屏渲染速度，如果⼤量的数据请求慢，这样会导致⻚⾯渲染也随之较慢，减少⽹络请求
 
-1. 减少网络请求：
+1. **减少网络请求**：
    使用图片懒加载形式，只发送用户试图可见的数据请求，这样可以增加请求速度，从而进一步提高渲染速度
-2. 使用缓存：
+2. **使用缓存**：
    与后端配合进⾏资源缓存，如⻓期不变的logo或者定量更新的资源可以采⽤缓存的形式来处理，也可以优化⾸屏渲染时间
-3. 使用CDN加速：
+3. **使用CDN加速**：
    对资源进行托管，保证服务器的响应速度
 
 #### 二、加载资源方面
 
-1. 路由懒加载：
+1. **路由懒加载**：
    使⽤路由懒加载的形式，进⾏资源处理，当我们需要⽤到该资源时再进⾏资源加载，可以将⼤量的加载时间空出来留给⾸屏渲染。
-2. script标签资源异步加载：当⼀些不影响系统环境资源的加载时，我们可以考虑使⽤ async 和 defer 加载
-3. webpack splitChunks 代码分割：利⽤webpack 代码分割 进⾏优化，可以将 js进⾏分⽚ ，⾸次加载⽂件体积⼤量减少，以及资源异步加载
-4. css 压缩 js压缩 html压缩 image压缩 gzip压缩：
+2. **script标签资源异步加载**：当⼀些不影响系统环境资源的加载时，我们可以考虑使⽤ async 和 defer 加载
+3. **webpack splitChunks 代码分割**：利⽤webpack 代码分割 进⾏优化，可以将 js进⾏分⽚ ，⾸次加载⽂件体积⼤量减少，以及资源异步加载
+4. **css 压缩 js压缩 html压缩 image压缩 gzip压缩**：
 
-+ css 可以通过 minicssExtracPlugin 进⾏ css压缩
-+ js 可以通过 TerserWebpackPlugin | uglifyJsPlugin 进⾏资源压缩
-+ html 可以通过 HtmlMinimizerWebpackPlugin 进⾏压缩
-+ 图⽚可以通过 ImageMinimizerWebpackPlugin 进⾏压缩
++ css 可以通过 **minicssExtracPlugin** 进⾏ css压缩
++ js 可以通过 **TerserWebpackPlugin | uglifyJsPlugin** 进⾏资源压缩
++ html 可以通过 **HtmlMinimizerWebpackPlugin** 进⾏压缩
++ 图⽚可以通过 **ImageMinimizerWebpackPlugin** 进⾏压缩
 
 5. css 样式书写规范：
    css代码写得好更有利于浏览器的解析
