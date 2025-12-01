@@ -15,7 +15,7 @@ export default defineUserConfig({
                     {text: "vue3", link: "/vue3/index"},
                     {text: "webpack", link: "/webpack/index"},
                     {text: "html", link: "/html/index"},
-                    {text:'common',link:"/common/index"}
+                    {text: '其他', link: "/common/index"}
                 ]
             },
             {
@@ -132,6 +132,18 @@ export default defineUserConfig({
                     children: [
                         {
                             text: "一、HTML 的 src 和 href 属性有什么区别？",
+                            link: "index.md"
+                        },
+                    ],
+                },
+            ],
+            '/common/': [
+                {
+                    text: '前端面试题',
+                    // 相对路径会自动追加子路径前缀
+                    children: [
+                        {
+                            text: "同步异步有什么区别？",
                             link: "index.md"
                         },
                     ],
