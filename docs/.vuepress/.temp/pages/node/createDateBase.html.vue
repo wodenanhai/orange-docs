@@ -128,7 +128,82 @@
 </table>
 <p>一般最常见的就是datetime了，因为日期和具体时间都记录的清清楚楚了。</p>
 <h4 id="主键是什么" tabindex="-1"><a class="header-anchor" href="#主键是什么"><span>主键是什么？</span></a></h4>
+<p>数据表里有个key，写的是PRI，它是主键的意思。一般，我们给每个表，都设置一个id，并把它设置成primary
+key。它是用来唯一标识当前这行数据的，用来给每条数据加了个编号。通过编号，就能找到这条独一无二的数据了。</p>
+<p>主键，还会搭配自增（auto_increment）来使用。</p>
+<p>自增的意思就是说，当你在数据库增加第一条数据，它的 id，就自动会设定成：1。再加入第二条数据，id 会自动设定成：2。以此类推，一直自己增加下去。</p>
+<p>这里的还有个Allow Null，是用来设定是否是空值的。不勾选它，就是不允许空，必须有东西存在。</p>
 <h4 id="给数据表-增加标题和内容" tabindex="-1"><a class="header-anchor" href="#给数据表-增加标题和内容"><span>给数据表，增加标题和内容</span></a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字段</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">长度</th>
+<th style="text-align:center">Allow Null</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">title</td>
+<td style="text-align:center">varchar</td>
+<td style="text-align:center">255</td>
+<td style="text-align:center">false</td>
+</tr>
+<tr>
+<td style="text-align:center">content</td>
+<td style="text-align:center">text</td>
+<td style="text-align:center">无</td>
+<td style="text-align:center">true</td>
+</tr>
+</tbody>
+</table>
+<h4 id="navicat-的操作" tabindex="-1"><a class="header-anchor" href="#navicat-的操作"><span>Navicat 的操作</span></a></h4>
+<p>无</p>
+<h4 id="总结" tabindex="-1"><a class="header-anchor" href="#总结"><span>总结</span></a></h4>
+<ul>
+<li>开发后端，实际上就是使用代码操作数据库</li>
+<li>数据库的编码选择utf8mb4，字符集选择utf8mb4_general_ci</li>
+<li>数据库里面有数据表，数据表里又有字段</li>
+<li>所有的表，最好都要有主键，也就是id字段</li>
+<li>最常用的数据类型</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">含义</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">int</td>
+<td style="text-align:center">整数</td>
+<td style="text-align:center">需要设定长度</td>
+</tr>
+<tr>
+<td style="text-align:center">decimal</td>
+<td style="text-align:center">小数</td>
+<td style="text-align:center">金额常用，需要设定长度。如 decimal(10, 2) 表示共存 10 位数，其中小数占 2 位</td>
+</tr>
+<tr>
+<td style="text-align:center">char、varchar</td>
+<td style="text-align:center">字符串</td>
+<td style="text-align:center">文字类的常用，需要设定长度。例如身份证号、文章的标题使用。</td>
+</tr>
+<tr>
+<td style="text-align:center">text</td>
+<td style="text-align:center">文本</td>
+<td style="text-align:center">存储大文本，无需设定长度。一般会用文字很多的时候，例如文章的正文部分。</td>
+</tr>
+<tr>
+<td style="text-align:center">date、time、datetime</td>
+<td style="text-align:center">日期</td>
+<td style="text-align:center">记录时间</td>
+</tr>
+</tbody>
+</table>
 </div></template>
 
 
