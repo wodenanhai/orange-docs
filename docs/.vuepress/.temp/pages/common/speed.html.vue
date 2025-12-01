@@ -3,26 +3,26 @@
 <h4 id="一、网络" tabindex="-1"><a class="header-anchor" href="#一、网络"><span>一、网络</span></a></h4>
 <p>当我们网络请求比较多的时候，浏览器会增加⾸屏渲染速度，如果⼤量的数据请求慢，这样会导致⻚⾯渲染也随之较慢，减少⽹络请求</p>
 <ol>
-<li>减少网络请求：
+<li><strong>减少网络请求</strong>：
 使用图片懒加载形式，只发送用户试图可见的数据请求，这样可以增加请求速度，从而进一步提高渲染速度</li>
-<li>使用缓存：
+<li><strong>使用缓存</strong>：
 与后端配合进⾏资源缓存，如⻓期不变的logo或者定量更新的资源可以采⽤缓存的形式来处理，也可以优化⾸屏渲染时间</li>
-<li>使用CDN加速：
+<li><strong>使用CDN加速</strong>：
 对资源进行托管，保证服务器的响应速度</li>
 </ol>
 <h4 id="二、加载资源方面" tabindex="-1"><a class="header-anchor" href="#二、加载资源方面"><span>二、加载资源方面</span></a></h4>
 <ol>
-<li>路由懒加载：
+<li><strong>路由懒加载</strong>：
 使⽤路由懒加载的形式，进⾏资源处理，当我们需要⽤到该资源时再进⾏资源加载，可以将⼤量的加载时间空出来留给⾸屏渲染。</li>
-<li>script标签资源异步加载：当⼀些不影响系统环境资源的加载时，我们可以考虑使⽤ async 和 defer 加载</li>
-<li>webpack splitChunks 代码分割：利⽤webpack 代码分割 进⾏优化，可以将 js进⾏分⽚ ，⾸次加载⽂件体积⼤量减少，以及资源异步加载</li>
-<li>css 压缩 js压缩 html压缩 image压缩 gzip压缩：</li>
+<li><strong>script标签资源异步加载</strong>：当⼀些不影响系统环境资源的加载时，我们可以考虑使⽤ async 和 defer 加载</li>
+<li><strong>webpack splitChunks 代码分割</strong>：利⽤webpack 代码分割 进⾏优化，可以将 js进⾏分⽚ ，⾸次加载⽂件体积⼤量减少，以及资源异步加载</li>
+<li><strong>css 压缩 js压缩 html压缩 image压缩 gzip压缩</strong>：</li>
 </ol>
 <ul>
-<li>css 可以通过 minicssExtracPlugin 进⾏ css压缩</li>
-<li>js 可以通过 TerserWebpackPlugin | uglifyJsPlugin 进⾏资源压缩</li>
-<li>html 可以通过 HtmlMinimizerWebpackPlugin 进⾏压缩</li>
-<li>图⽚可以通过 ImageMinimizerWebpackPlugin 进⾏压缩</li>
+<li>css 可以通过 <strong>minicssExtracPlugin</strong> 进⾏ css压缩</li>
+<li>js 可以通过 <strong>TerserWebpackPlugin | uglifyJsPlugin</strong> 进⾏资源压缩</li>
+<li>html 可以通过 <strong>HtmlMinimizerWebpackPlugin</strong> 进⾏压缩</li>
+<li>图⽚可以通过 <strong>ImageMinimizerWebpackPlugin</strong> 进⾏压缩</li>
 </ul>
 <ol start="5">
 <li>css 样式书写规范：
