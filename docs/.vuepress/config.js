@@ -183,7 +183,7 @@ export default defineUserConfig({
                             link: "curd.md"
                         }, {
                             text: "常用SQL语句二",
-                            link: ""
+                            link: "curd2.md"
                         }, {
                             text: "Sequelize ORM",
                             link: ""
