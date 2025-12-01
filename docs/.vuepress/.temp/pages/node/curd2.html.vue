@@ -1,0 +1,46 @@
+<template><div><h4 id="查询语句" tabindex="-1"><a class="header-anchor" href="#查询语句"><span>查询语句</span></a></h4>
+<div class="language-sql line-numbers-mode" data-highlighter="prismjs" data-ext="sql"><pre v-pre><code class="language-sql"><span class="line"><span class="token keyword">SELECT</span> <span class="token operator">*</span></span>
+<span class="line"><span class="token keyword">FROM</span> 表名<span class="token punctuation">;</span></span>
+<span class="line"></span>
+<span class="line"><span class="token comment">-- 例如：</span></span>
+<span class="line"><span class="token keyword">SELECT</span> <span class="token operator">*</span></span>
+<span class="line"><span class="token keyword">FROM</span> <span class="token identifier"><span class="token punctuation">`</span>Articles<span class="token punctuation">`</span></span><span class="token punctuation">;</span></span>
+<span class="line"></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-sql line-numbers-mode" data-highlighter="prismjs" data-ext="sql"><pre v-pre><code class="language-sql"><span class="line"><span class="token keyword">SELECT</span> <span class="token identifier"><span class="token punctuation">`</span>id<span class="token punctuation">`</span></span><span class="token punctuation">,</span> <span class="token identifier"><span class="token punctuation">`</span>title<span class="token punctuation">`</span></span></span>
+<span class="line"><span class="token keyword">FROM</span> <span class="token identifier"><span class="token punctuation">`</span>Articles<span class="token punctuation">`</span></span><span class="token punctuation">;</span></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="添加条件" tabindex="-1"><a class="header-anchor" href="#添加条件"><span>添加条件</span></a></h4>
+<div class="language-sql line-numbers-mode" data-highlighter="prismjs" data-ext="sql"><pre v-pre><code class="language-sql"><span class="line"><span class="token keyword">SELECT</span> <span class="token operator">*</span></span>
+<span class="line"><span class="token keyword">FROM</span> 表名</span>
+<span class="line"><span class="token keyword">WHERE</span> 条件<span class="token punctuation">;</span></span>
+<span class="line"></span>
+<span class="line"><span class="token comment">-- 例如：</span></span>
+<span class="line"><span class="token keyword">SELECT</span> <span class="token operator">*</span></span>
+<span class="line"><span class="token keyword">FROM</span> <span class="token identifier"><span class="token punctuation">`</span>Articles<span class="token punctuation">`</span></span></span>
+<span class="line"><span class="token keyword">WHERE</span> <span class="token identifier"><span class="token punctuation">`</span>id<span class="token punctuation">`</span></span> <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span></span>
+<span class="line"></span>
+<span class="line"><span class="token comment">-- 或者，想查询id大于2的文章:</span></span>
+<span class="line"><span class="token keyword">SELECT</span> <span class="token operator">*</span></span>
+<span class="line"><span class="token keyword">FROM</span> <span class="token identifier"><span class="token punctuation">`</span>Articles<span class="token punctuation">`</span></span></span>
+<span class="line"><span class="token keyword">WHERE</span> <span class="token identifier"><span class="token punctuation">`</span>id<span class="token punctuation">`</span></span> <span class="token operator">></span> <span class="token number">2</span><span class="token punctuation">;</span></span>
+<span class="line"></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="排序" tabindex="-1"><a class="header-anchor" href="#排序"><span>排序</span></a></h4>
+<p>对数据进行排序，两个关键词，ASC和DESC。ASC是正序（升序），也就是从小到大。默认就是按照id来从小到大排列的。DESC是倒序（降序），就是从大到小了。</p>
+<div class="language-sql line-numbers-mode" data-highlighter="prismjs" data-ext="sql"><pre v-pre><code class="language-sql"><span class="line"><span class="token comment">-- 查询id大于2的文章，按 id 从大到小排序，即降序</span></span>
+<span class="line"><span class="token keyword">SELECT</span> <span class="token operator">*</span></span>
+<span class="line"><span class="token keyword">FROM</span> <span class="token identifier"><span class="token punctuation">`</span>Articles<span class="token punctuation">`</span></span></span>
+<span class="line"><span class="token keyword">WHERE</span> <span class="token identifier"><span class="token punctuation">`</span>id<span class="token punctuation">`</span></span> <span class="token operator">></span> <span class="token number">2</span></span>
+<span class="line"><span class="token keyword">ORDER</span> <span class="token keyword">BY</span> <span class="token identifier"><span class="token punctuation">`</span>id<span class="token punctuation">`</span></span> <span class="token keyword">DESC</span><span class="token punctuation">;</span></span>
+<span class="line"></span>
+<span class="line"><span class="token comment">-- 查询id大于2的文章，按 id 从小到大排列，即升序</span></span>
+<span class="line"><span class="token keyword">SELECT</span> <span class="token operator">*</span></span>
+<span class="line"><span class="token keyword">FROM</span> <span class="token identifier"><span class="token punctuation">`</span>Articles<span class="token punctuation">`</span></span></span>
+<span class="line"><span class="token keyword">WHERE</span> <span class="token identifier"><span class="token punctuation">`</span>id<span class="token punctuation">`</span></span> <span class="token operator">></span> <span class="token number">2</span></span>
+<span class="line"><span class="token keyword">ORDER</span> <span class="token keyword">BY</span> <span class="token identifier"><span class="token punctuation">`</span>id<span class="token punctuation">`</span></span> <span class="token keyword">ASC</span><span class="token punctuation">;</span></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><a href="https://clwy.cn/documents/mysql" target="_blank" rel="noopener noreferrer">MySQL 教程</a></p>
+</div></template>
+
+
