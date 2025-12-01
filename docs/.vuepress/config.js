@@ -186,7 +186,7 @@ export default defineUserConfig({
                             link: "curd2.md"
                         }, {
                             text: "Sequelize ORM",
-                            link: ""
+                            link: "sequelize.md"
                         }, {
                             text: "迁移与种子",
                             link: ""
