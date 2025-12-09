@@ -192,10 +192,10 @@ export default defineUserConfig({
                             link: "model"
                         }, {
                             text: "接口1",
-                            link: ""
+                            link: "api1.md"
                         }, {
                             text: "接口2",
-                            link: ""
+                            link: "api2"
                         },
                     ],
                 },
