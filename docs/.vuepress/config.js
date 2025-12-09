@@ -196,6 +196,12 @@ export default defineUserConfig({
                         }, {
                             text: "接口2",
                             link: "api2"
+                        }, {
+                            text: "数据分页",
+                            link: "api7"
+                        }, {
+                            text: "白名单过滤表单数据",
+                            link: "api8"
                         },
                     ],
                 },
