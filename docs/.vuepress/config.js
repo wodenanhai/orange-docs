@@ -188,8 +188,8 @@ export default defineUserConfig({
                             text: "Sequelize ORM",
                             link: "sequelize.md"
                         }, {
-                            text: "迁移与种子",
-                            link: ""
+                            text: "模型、迁移与种子",
+                            link: "model"
                         }, {
                             text: "接口1",
                             link: ""
