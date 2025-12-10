@@ -202,6 +202,9 @@ export default defineUserConfig({
                         }, {
                             text: "白名单过滤表单数据",
                             link: "api8"
+                        }, {
+                            text: "终极版：增删改查（封装响应，优化代码）",
+                            link: "api9"
                         },
                     ],
                 },

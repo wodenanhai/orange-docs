@@ -14,8 +14,6 @@ export const routes = Object.fromEntries([
   ["/tools/publish.html", { loader: () => import(/* webpackChunkName: "tools_publish.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/tools/publish.html.js"), meta: {"title":"2、发布到npm中央仓库"} }],
   ["/tools/use.html", { loader: () => import(/* webpackChunkName: "tools_use.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/tools/use.html.js"), meta: {"title":"3.使用自定义工具包"} }],
   ["/tips/", { loader: () => import(/* webpackChunkName: "tips_index.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/tips/index.html.js"), meta: {"title":""} }],
-  ["/vue3/", { loader: () => import(/* webpackChunkName: "vue3_index.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/vue3/index.html.js"), meta: {"title":""} }],
-  ["/webpack/", { loader: () => import(/* webpackChunkName: "webpack_index.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/webpack/index.html.js"), meta: {"title":""} }],
   ["/node/api1.html", { loader: () => import(/* webpackChunkName: "node_api1.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/node/api1.html.js"), meta: {"title":""} }],
   ["/node/api2.html", { loader: () => import(/* webpackChunkName: "node_api2.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/node/api2.html.js"), meta: {"title":""} }],
   ["/node/api7.html", { loader: () => import(/* webpackChunkName: "node_api7.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/node/api7.html.js"), meta: {"title":""} }],
@@ -31,6 +29,8 @@ export const routes = Object.fromEntries([
   ["/node/project.html", { loader: () => import(/* webpackChunkName: "node_project.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/node/project.html.js"), meta: {"title":""} }],
   ["/node/sequelize.html", { loader: () => import(/* webpackChunkName: "node_sequelize.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/node/sequelize.html.js"), meta: {"title":""} }],
   ["/vue2/", { loader: () => import(/* webpackChunkName: "vue2_index.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/vue2/index.html.js"), meta: {"title":"基础面试题一"} }],
+  ["/vue3/", { loader: () => import(/* webpackChunkName: "vue3_index.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/vue3/index.html.js"), meta: {"title":""} }],
+  ["/webpack/", { loader: () => import(/* webpackChunkName: "webpack_index.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/webpack/index.html.js"), meta: {"title":""} }],
   ["/tools/customize/array.html", { loader: () => import(/* webpackChunkName: "tools_customize_array.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/tools/customize/array.html.js"), meta: {"title":"2、数组相关"} }],
   ["/tools/customize/function.html", { loader: () => import(/* webpackChunkName: "tools_customize_function.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/tools/customize/function.html.js"), meta: {"title":"1、函数相关"} }],
   ["/tools/customize/handleAjax.html", { loader: () => import(/* webpackChunkName: "tools_customize_handleAjax.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/tools/customize/handleAjax.html.js"), meta: {"title":"6.手写ajax请求函数"} }],
@@ -41,6 +41,7 @@ export const routes = Object.fromEntries([
   ["/tools/customize/object.html", { loader: () => import(/* webpackChunkName: "tools_customize_object.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/tools/customize/object.html.js"), meta: {"title":"3.对象相关"} }],
   ["/tools/customize/string.html", { loader: () => import(/* webpackChunkName: "tools_customize_string.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/tools/customize/string.html.js"), meta: {"title":"4.字符串相关"} }],
   ["/404.html", { loader: () => import(/* webpackChunkName: "404.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/404.html.js"), meta: {"title":""} }],
+  ["/node/api9.html", { loader: () => import(/* webpackChunkName: "node_api9.html" */"/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/node/api9.html.js"), meta: {"title":""} }],
 ]);
 
 if (import.meta.webpackHot) {
