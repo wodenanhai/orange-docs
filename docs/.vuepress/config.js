@@ -205,7 +205,16 @@ export default defineUserConfig({
                         }, {
                             text: "终极版：增删改查（封装响应，优化代码）",
                             link: "api9"
+                        }, {
+                            text: "实战数据库设计",
+                            link: "database"
                         },
+
+
+                        {
+                            text: "番外：使用prisma ORM",
+                            link: "prisma"
+                        }
                     ],
                 },
                 // {
