@@ -1,5 +1,5 @@
 import comp from "/Users/zhangcheng/Desktop/All_In_One/orange-docs/docs/.vuepress/.temp/pages/node/prisma.html.vue"
-const data = JSON.parse("{\"path\":\"/node/prisma.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"git\":{},\"filePathRelative\":\"node/prisma.md\"}")
+const data = JSON.parse("{\"path\":\"/node/prisma.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"git\":{\"updatedTime\":1765359279000,\"contributors\":[{\"name\":\"zhangcheng\",\"username\":\"zhangcheng\",\"email\":\"2778162192@qq.com\",\"commits\":1,\"url\":\"https://github.com/zhangcheng\"}],\"changelog\":[{\"hash\":\"a9121c3e55aad77abab7e757c5a16952cec14ef3\",\"time\":1765359279000,\"email\":\"2778162192@qq.com\",\"author\":\"zhangcheng\",\"message\":\"commit\"}]},\"filePathRelative\":\"node/prisma.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {
