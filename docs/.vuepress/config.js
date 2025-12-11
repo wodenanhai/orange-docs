@@ -209,8 +209,6 @@ export default defineUserConfig({
                             text: "实战数据库设计",
                             link: "database"
                         },
-
-
                         {
                             text: "番外：使用prisma ORM",
                             link: "prisma"
