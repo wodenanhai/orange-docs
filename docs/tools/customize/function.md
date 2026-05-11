@@ -189,7 +189,7 @@ export function bind(fn, obj, ...args) {
     - 场景:
         - 输入框实时搜索联想（keyup/input）
 - 区别函数节流与防抖
-  ![png](\img.png)
+  ![png](./img.png)
 
 ### 1.2.2.API说明
 
