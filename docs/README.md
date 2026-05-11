@@ -1,8 +1,10 @@
 ---
-#首页
+title: Orange Docs
 home: true
-# 图标
 heroImage: /images/marry.png
+heroImageDark: /images/house.png
+heroText: Orange Docs
+tagline: 面试知识库 · 工具沉淀 · Node 实战指南
 
 actions:
 - text: 开始面试
@@ -11,12 +13,17 @@ actions:
 - text: 常用工具
   link: /tools/index
   type: secondary
+- text: Node 指南
+  link: /node/index
+  type: secondary
 
 features:
-- title: 坚持目标
-  details: 通过自定义实现函数相关、数组相关、对象相关，字符串相关工具函数； 手写继承、DOM事件监听、ajax请求、事件总线、消息订阅-发布、Promise。极大提升对JS核心技术的理解和编码能力
-- title: 面试题库
-  details: Vue2、Vue3、React、Webpack、HTML、JavaScript、CSS、手写代码、性能优化、前端系统设计、Git等
-- title: 扩展能力
-  details: 如何创建自己的npm工具库？如何快速搭建在线技术或文档站点？
+- title: 系统化面试题库
+  details: 覆盖 Vue2、Vue3、Webpack、HTML 与综合前端知识点，按主题分类，便于高效复习与查漏补缺。
+- title: 手写核心能力
+  details: 聚焦函数、数组、对象、字符串等基础能力，配套 DOM 事件、Ajax、发布订阅、Promise 等高频手写实践。
+- title: 工程化实战路线
+  details: 从工具库创建与发布到文档站搭建，再到 Node + 数据库实践，形成从基础到项目落地的完整闭环。
+
+footer: MIT Licensed | Copyright © 2026
 ---

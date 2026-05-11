@@ -1,5 +1,48 @@
-// .vuepress/styles/palette.scss
-.theme-default-content pre,
-.theme-default-content pre code {
-  color: white !important;
+/* 全站设计变量（浅色） */
+:root {
+  --vp-c-brand-1: #3b82f6;
+  --vp-c-brand-2: #2563eb;
+  --vp-c-brand-3: #1d4ed8;
+
+  --vp-c-accent: #3b82f6;
+  --vp-c-accent-bg: #2563eb;
+  --vp-c-accent-hover: #1d4ed8;
+
+  --vp-c-bg: #f7f9fc;
+  --vp-c-bg-soft: #ffffff;
+  --vp-c-bg-mute: #f1f5f9;
+
+  --vp-c-text-1: #0f172a;
+  --vp-c-text-2: #334155;
+  --vp-c-text-3: #64748b;
+
+  --vp-c-border: #e2e8f0;
+  --vp-c-divider: #e2e8f0;
+
+  --vp-code-block-bg: #0b1220;
+  --vp-code-block-color: #e2e8f0;
+
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(120deg, #2563eb 20%, #7c3aed 100%);
+}
+
+/* 全站设计变量（深色） */
+[data-theme='dark'] {
+  --vp-c-brand-1: #60a5fa;
+  --vp-c-brand-2: #3b82f6;
+  --vp-c-brand-3: #2563eb;
+
+  --vp-c-bg: #0b1220;
+  --vp-c-bg-soft: #111a2c;
+  --vp-c-bg-mute: #162238;
+
+  --vp-c-text-1: #e5edf8;
+  --vp-c-text-2: #c2d1e6;
+  --vp-c-text-3: #8fa7c7;
+
+  --vp-c-border: #24324a;
+  --vp-c-divider: #24324a;
+
+  --vp-code-block-bg: #060b16;
+  --vp-code-block-color: #dbe7f7;
 }
