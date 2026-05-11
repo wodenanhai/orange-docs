@@ -1,6 +1,5 @@
-import { CodeTabs } from "/Users/zhangcheng/Desktop/All_In_One/orange-docs/node_modules/@vuepress/plugin-markdown-tab/lib/client/components/CodeTabs.js";
-import { Tabs } from "/Users/zhangcheng/Desktop/All_In_One/orange-docs/node_modules/@vuepress/plugin-markdown-tab/lib/client/components/Tabs.js";
-import "/Users/zhangcheng/Desktop/All_In_One/orange-docs/node_modules/@vuepress/plugin-markdown-tab/lib/client/styles/vars.css";
+import { CodeTabs } from "/Users/zhangcheng/Desktop/All_In_One/orange-docs/node_modules/@vuepress/plugin-markdown-tab/dist/client/components/CodeTabs.js";
+import { Tabs } from "/Users/zhangcheng/Desktop/All_In_One/orange-docs/node_modules/@vuepress/plugin-markdown-tab/dist/client/components/Tabs.js";
 
 export default {
   enhance: ({ app }) => {
