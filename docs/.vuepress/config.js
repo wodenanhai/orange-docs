@@ -7,31 +7,35 @@ export default defineUserConfig({
     bundler: viteBundler(),
     theme: defaultTheme({
         logo: '/images/house.png',
+        repo: 'https://github.com/',
+        docsDir: 'docs',
+        editLink: false,
+        lastUpdated: true,
+        contributors: false,
+        colorModeSwitch: true,
+        colorMode: 'auto',
+        home: '/',
         navbar: [
             {
-                text: "面试",
+                text: "面试知识库",
                 children: [
-                    {text: "vue2", link: "/vue2/index"},
-                    {text: "vue3", link: "/vue3/index"},
-                    {text: "webpack", link: "/webpack/index"},
-                    {text: "html", link: "/html/index"},
-                    {text: '其他', link: "/common/index"}
+                    {text: "Vue2 高频题", link: "/vue2/index"},
+                    {text: "Vue3 进阶题", link: "/vue3/index"},
+                    {text: "Webpack 工程化", link: "/webpack/index"},
+                    {text: "HTML 基础", link: "/html/index"},
+                    {text: '综合专题', link: "/common/index"}
                 ]
             },
             {
-                text: "个人简介",
-                link: 'https://frp.aitlin.top'
-            },
-            {
-                text: "自定义工具函数库",
+                text: "工具函数库",
                 link: '/tools/index'
             },
             {
-                text: "node指南",
+                text: "Node 实战",
                 link: '/node/index'
             },
             {
-                text: "小技巧",
+                text: "效率技巧",
                 link: '/tips/index'
             },
             // {
@@ -42,7 +46,7 @@ export default defineUserConfig({
         sidebar: {
             '/vue2/': [
                 {
-                    text: 'vue2',
+                    text: 'Vue2 面试专题',
                     // 相对路径会自动追加子路径前缀
                     children: [
                         {
@@ -54,7 +58,7 @@ export default defineUserConfig({
             ],
             '/vue3/': [
                 {
-                    text: 'vue3',
+                    text: 'Vue3 面试专题',
                     // 相对路径会自动追加子路径前缀
                     children: [
                         'index.md',
@@ -63,7 +67,7 @@ export default defineUserConfig({
             ],
             '/tools/': [
                 {
-                    text: '打包自定义工具库',
+                    text: '工具库工程化',
                     // 相对路径会自动追加子路径前缀
                     children: [
                         {
@@ -81,7 +85,7 @@ export default defineUserConfig({
                     ],
                 },
                 {
-                    text: '各种自定义',
+                    text: '高频手写实现',
                     children: [
                         {
                             text: "1、函数相关",
@@ -127,7 +131,7 @@ export default defineUserConfig({
             ],
             '/html/': [
                 {
-                    text: '前端HTML面试题',
+                    text: 'HTML 面试专题',
                     // 相对路径会自动追加子路径前缀
                     children: [
                         {
@@ -139,7 +143,7 @@ export default defineUserConfig({
             ],
             '/common/': [
                 {
-                    text: '前端面试题',
+                    text: '前端综合专题',
                     // 相对路径会自动追加子路径前缀
                     children: [
                         {
@@ -160,7 +164,7 @@ export default defineUserConfig({
             ],
             '/node/': [
                 {
-                    text: 'NodeJS',
+                    text: 'Node.js 实战路线',
                     children: [
                         {
                             text: "使用 nvm 安装 Node.js",
@@ -227,7 +231,7 @@ export default defineUserConfig({
             ],
             '/tips/': [
                 {
-                    text: '小技巧',
+                    text: '效率技巧',
                     link: "index.md"
                 },
                 // {
@@ -243,7 +247,7 @@ export default defineUserConfig({
         },
     }),
     lang: "zh-CN",
-    title: '你好，求职者',
-    description: "你已经被录取了",
-    // head: [['link', {rel: 'icon', href: '/images/house.png'}]],
+    title: 'Orange Docs',
+    description: "面向前端成长的面试知识库、工具沉淀与 Node 实战指南",
+    head: [['link', {rel: 'icon', href: '/orange-docs/images/house.png'}]],
 })
