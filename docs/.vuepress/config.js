@@ -7,14 +7,11 @@ export default defineUserConfig({
     bundler: viteBundler(),
     theme: defaultTheme({
         logo: '/images/house.png',
-        repo: 'https://github.com/',
-        docsDir: 'docs',
         editLink: false,
         lastUpdated: true,
         contributors: false,
         colorModeSwitch: true,
         colorMode: 'auto',
-        home: '/',
         navbar: [
             {
                 text: "面试知识库",
@@ -37,17 +34,12 @@ export default defineUserConfig({
             {
                 text: "效率技巧",
                 link: '/tips/index'
-            },
-            // {
-            //     text: "旅游",
-            //     link: 'https://www.aitlin.top/sanya'
-            // }
+            }
         ],
         sidebar: {
             '/vue2/': [
                 {
                     text: 'Vue2 面试专题',
-                    // 相对路径会自动追加子路径前缀
                     children: [
                         {
                             text: "基础面试题一",
@@ -59,7 +51,6 @@ export default defineUserConfig({
             '/vue3/': [
                 {
                     text: 'Vue3 面试专题',
-                    // 相对路径会自动追加子路径前缀
                     children: [
                         'index.md',
                     ],
@@ -68,7 +59,6 @@ export default defineUserConfig({
             '/tools/': [
                 {
                     text: '工具库工程化',
-                    // 相对路径会自动追加子路径前缀
                     children: [
                         {
                             text: "1、创建工具包项目",
@@ -132,7 +122,6 @@ export default defineUserConfig({
             '/html/': [
                 {
                     text: 'HTML 面试专题',
-                    // 相对路径会自动追加子路径前缀
                     children: [
                         {
                             text: "一、HTML 的 src 和 href 属性有什么区别？",
@@ -144,7 +133,6 @@ export default defineUserConfig({
             '/common/': [
                 {
                     text: '前端综合专题',
-                    // 相对路径会自动追加子路径前缀
                     children: [
                         {
                             text: "同步异步有什么区别？",
@@ -218,31 +206,13 @@ export default defineUserConfig({
                             link: "prisma"
                         }
                     ],
-                },
-                // {
-                //     text: "1",
-                //     children: [
-                //         {
-                //             text: "1",
-                //             link: "install.md"
-                //         },
-                //     ]
-                // }
+                }
             ],
             '/tips/': [
                 {
                     text: '效率技巧',
                     link: "index.md"
-                },
-                // {
-                //     text: "1",
-                //     children: [
-                //         {
-                //             text: "1",
-                //             link: "install.md"
-                //         },
-                //     ]
-                // }
+                }
             ],
         },
     }),

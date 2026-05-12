@@ -26,14 +26,13 @@ export const routes = Object.fromEntries([
   ["/node/project.html", { loader: () => import(/* webpackChunkName: "node_project.html" */"/Users/zhangcheng/Desktop/oranges/orange-docs/docs/node/project.md"), meta: {"title":""} }],
   ["/node/sequelize.html", { loader: () => import(/* webpackChunkName: "node_sequelize.html" */"/Users/zhangcheng/Desktop/oranges/orange-docs/docs/node/sequelize.md"), meta: {"title":""} }],
   ["/tips/", { loader: () => import(/* webpackChunkName: "tips_index.html" */"/Users/zhangcheng/Desktop/oranges/orange-docs/docs/tips/index.md"), meta: {"title":""} }],
-  ["/vue2/", { loader: () => import(/* webpackChunkName: "vue2_index.html" */"/Users/zhangcheng/Desktop/oranges/orange-docs/docs/vue2/index.md"), meta: {"title":"基础面试题一"} }],
-  ["/vue3/", { loader: () => import(/* webpackChunkName: "vue3_index.html" */"/Users/zhangcheng/Desktop/oranges/orange-docs/docs/vue3/index.md"), meta: {"title":""} }],
-  ["/webpack/", { loader: () => import(/* webpackChunkName: "webpack_index.html" */"/Users/zhangcheng/Desktop/oranges/orange-docs/docs/webpack/index.md"), meta: {"title":""} }],
   ["/tools/buildVuePress.html", { loader: () => import(/* webpackChunkName: "tools_buildVuePress.html" */"/Users/zhangcheng/Desktop/oranges/orange-docs/docs/tools/buildVuePress.md"), meta: {"title":"使用VuePress搭建在线文档网站"} }],
   ["/tools/create.html", { loader: () => import(/* webpackChunkName: "tools_create.html" */"/Users/zhangcheng/Desktop/oranges/orange-docs/docs/tools/create.md"), meta: {"title":"1、创建工具包项目"} }],
   ["/tools/", { loader: () => import(/* webpackChunkName: "tools_index.html" */"/Users/zhangcheng/Desktop/oranges/orange-docs/docs/tools/index.md"), meta: {"title":"安装插件"} }],
   ["/tools/publish.html", { loader: () => import(/* webpackChunkName: "tools_publish.html" */"/Users/zhangcheng/Desktop/oranges/orange-docs/docs/tools/publish.md"), meta: {"title":"2、发布到npm中央仓库"} }],
   ["/tools/use.html", { loader: () => import(/* webpackChunkName: "tools_use.html" */"/Users/zhangcheng/Desktop/oranges/orange-docs/docs/tools/use.md"), meta: {"title":"3.使用自定义工具包"} }],
+  ["/vue2/", { loader: () => import(/* webpackChunkName: "vue2_index.html" */"/Users/zhangcheng/Desktop/oranges/orange-docs/docs/vue2/index.md"), meta: {"title":"基础面试题一"} }],
+  ["/vue3/", { loader: () => import(/* webpackChunkName: "vue3_index.html" */"/Users/zhangcheng/Desktop/oranges/orange-docs/docs/vue3/index.md"), meta: {"title":"Vue3 面试题"} }],
   ["/tools/customize/array.html", { loader: () => import(/* webpackChunkName: "tools_customize_array.html" */"/Users/zhangcheng/Desktop/oranges/orange-docs/docs/tools/customize/array.md"), meta: {"title":"2、数组相关"} }],
   ["/tools/customize/function.html", { loader: () => import(/* webpackChunkName: "tools_customize_function.html" */"/Users/zhangcheng/Desktop/oranges/orange-docs/docs/tools/customize/function.md"), meta: {"title":"1、函数相关"} }],
   ["/tools/customize/handleAjax.html", { loader: () => import(/* webpackChunkName: "tools_customize_handleAjax.html" */"/Users/zhangcheng/Desktop/oranges/orange-docs/docs/tools/customize/handleAjax.md"), meta: {"title":"6.手写ajax请求函数"} }],
@@ -44,6 +43,7 @@ export const routes = Object.fromEntries([
   ["/tools/customize/object.html", { loader: () => import(/* webpackChunkName: "tools_customize_object.html" */"/Users/zhangcheng/Desktop/oranges/orange-docs/docs/tools/customize/object.md"), meta: {"title":"3.对象相关"} }],
   ["/tools/customize/string.html", { loader: () => import(/* webpackChunkName: "tools_customize_string.html" */"/Users/zhangcheng/Desktop/oranges/orange-docs/docs/tools/customize/string.md"), meta: {"title":"4.字符串相关"} }],
   ["/404.html", { loader: () => import(/* webpackChunkName: "404.html" */"/Users/zhangcheng/Desktop/oranges/orange-docs/docs/.vuepress/.temp/pages/404.html.vue"), meta: {"title":""} }],
+  ["/webpack/", { loader: () => import(/* webpackChunkName: "webpack_index.html" */"/Users/zhangcheng/Desktop/oranges/orange-docs/docs/webpack/index.md"), meta: {"title":"工程化（Webpack）面试题"} }],
 ]);
 
 if (import.meta.webpackHot) {
