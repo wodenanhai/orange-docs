@@ -56,6 +56,17 @@ export default defineUserConfig({
                     ],
                 },
             ],
+            '/webpack/': [
+                {
+                    text: 'Webpack 工程化',
+                    children: [
+                        {
+                            text: 'Webpack 面试题',
+                            link: 'index.md'
+                        }
+                    ]
+                }
+            ],
             '/tools/': [
                 {
                     text: '工具库工程化',
