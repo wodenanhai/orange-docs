@@ -1,12 +1,14 @@
-/* Orange Docs · 小清新全站视觉 */
+/* Orange Docs · Creative Aurora 全站视觉 */
 
 /* ===== 基础排版 ===== */
 html,
 body {
   background:
-    radial-gradient(circle at 0% 0%, rgba(126, 200, 227, 0.16), transparent 36%),
-    radial-gradient(circle at 100% 0%, rgba(79, 179, 166, 0.14), transparent 34%),
+    radial-gradient(circle at 8% 8%, var(--od-glow-1), transparent 34%),
+    radial-gradient(circle at 92% 10%, var(--od-glow-2), transparent 36%),
+    radial-gradient(circle at 50% 100%, rgba(91, 141, 255, 0.14), transparent 40%),
     var(--vp-c-bg);
+  background-attachment: fixed;
 }
 
 .theme-container {
@@ -15,8 +17,8 @@ body {
 
 /* ===== 顶部导航 ===== */
 .navbar {
-  backdrop-filter: blur(10px) saturate(140%);
-  background: color-mix(in srgb, var(--vp-c-bg-soft) 88%, transparent);
+  backdrop-filter: blur(14px) saturate(150%);
+  background: color-mix(in srgb, var(--vp-c-bg-soft) 78%, transparent);
   border-bottom: 1px solid var(--vp-c-border);
   box-shadow: var(--od-shadow-soft);
 }
@@ -27,8 +29,38 @@ body {
   letter-spacing: 0.2px;
 }
 
+.navbar .site-name {
+  position: relative;
+  background: linear-gradient(120deg, var(--vp-c-brand-1), var(--vp-c-brand-3));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 .navbar .nav-item > a:hover {
   color: var(--vp-c-brand-2);
+}
+
+.navbar .nav-item > a {
+  padding: 0.24rem 0.62rem;
+  border-radius: 999px;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.navbar .nav-item > a:hover {
+  background: color-mix(in srgb, var(--vp-c-brand-1) 14%, var(--vp-c-bg-soft));
+  transform: translateY(-1px);
+}
+
+.navbar::after {
+  content: '';
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  bottom: -1px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--vp-c-brand-2), transparent);
+  opacity: 0.7;
 }
 
 /* ===== 侧边栏 ===== */
@@ -51,31 +83,57 @@ body {
 /* ===== 首页 Hero ===== */
 .home .hero {
   padding-top: 2rem;
+  position: relative;
+}
+
+.home .hero::before {
+  content: '';
+  position: absolute;
+  inset: -1rem -1rem auto;
+  height: 240px;
+  background: linear-gradient(120deg, rgba(124, 92, 255, 0.2), rgba(37, 198, 247, 0.16));
+  filter: blur(36px);
+  z-index: -1;
 }
 
 .home .hero h1 {
   letter-spacing: 0.4px;
+  font-size: clamp(2.1rem, 5vw, 3.2rem);
+  text-shadow: 0 8px 34px color-mix(in srgb, var(--vp-c-brand-1) 40%, transparent);
 }
 
 .home .hero .description {
   color: var(--vp-c-text-2);
-  font-size: 1.08rem;
+  font-size: 1.12rem;
   max-width: 760px;
 }
 
 .home .hero img {
   border-radius: 18px;
   box-shadow: var(--od-shadow-soft);
+  border: 1px solid color-mix(in srgb, var(--vp-c-brand-2) 30%, var(--vp-c-border));
 }
 
 .home .actions .action-button {
   border-radius: 999px;
   font-weight: 600;
   padding: 0.65rem 1.2rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .home .actions .primary {
-  box-shadow: 0 10px 24px rgba(79, 179, 166, 0.28);
+  background: linear-gradient(120deg, var(--vp-c-brand-1), var(--vp-c-brand-3));
+  border: 0;
+  box-shadow: 0 12px 30px rgba(124, 92, 255, 0.35);
+}
+
+.home .actions .secondary {
+  border: 1px solid color-mix(in srgb, var(--vp-c-brand-2) 42%, var(--vp-c-border));
+  background: color-mix(in srgb, var(--vp-c-bg-soft) 92%, var(--vp-c-brand-3) 8%);
+}
+
+.home .actions .action-button:hover {
+  transform: translateY(-2px);
 }
 
 /* ===== 首页 Features 卡片 ===== */
@@ -90,16 +148,33 @@ body {
   padding: 1.1rem 1rem;
   background: linear-gradient(
     160deg,
-    color-mix(in srgb, var(--vp-c-bg-soft) 94%, #ffffff),
-    color-mix(in srgb, var(--vp-c-brand-1) 5%, var(--vp-c-bg-soft))
+    color-mix(in srgb, var(--vp-c-bg-soft) 92%, #ffffff),
+    color-mix(in srgb, var(--vp-c-brand-1) 10%, var(--vp-c-bg-soft))
   );
   box-shadow: var(--od-shadow-card);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.home .feature::after {
+  content: '';
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  right: -60px;
+  top: -60px;
+  background: radial-gradient(circle, color-mix(in srgb, var(--vp-c-brand-3) 26%, transparent), transparent 70%);
+  pointer-events: none;
 }
 
 .home .feature h2 {
   font-size: 1.06rem;
   margin-bottom: 0.45rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
 .home .feature p {
@@ -110,7 +185,7 @@ body {
 
 .home .feature:hover {
   transform: translateY(-3px);
-  box-shadow: 0 16px 34px rgba(126, 200, 227, 0.2);
+  box-shadow: 0 18px 38px rgba(91, 141, 255, 0.24);
 }
 
 /* ===== 正文通用 ===== */
@@ -132,6 +207,18 @@ body {
   padding-bottom: 0.35rem;
   font-size: clamp(1.35rem, 2.2vw, 1.58rem);
   border-bottom: 1px dashed var(--vp-c-divider);
+  position: relative;
+}
+
+.theme-default-content h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 72px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--vp-c-brand-1), var(--vp-c-brand-3));
+  border-radius: 999px;
 }
 
 .theme-default-content h3 {
@@ -202,6 +289,11 @@ body {
   font-size: 0.95rem;
 }
 
+.theme-default-content th {
+  font-weight: 700;
+  color: var(--vp-c-text-1);
+}
+
 .theme-default-content tr:last-child td {
   border-bottom: 0;
 }
@@ -234,7 +326,7 @@ body {
 .theme-default-content div[class*='language-'] {
   border-radius: 12px;
   border: 1px solid color-mix(in srgb, var(--vp-c-border) 65%, transparent);
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 14px 32px rgba(15, 20, 52, 0.32);
   overflow: hidden;
 }
 

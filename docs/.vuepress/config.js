@@ -14,25 +14,25 @@ export default defineUserConfig({
         colorMode: 'auto',
         navbar: [
             {
-                text: "面试知识库",
+                text: "面试题",
                 children: [
-                    {text: "Vue2 高频题", link: "/vue2/index"},
-                    {text: "Vue3 进阶题", link: "/vue3/index"},
-                    {text: "Webpack 工程化", link: "/webpack/index"},
+                    {text: "Vue2", link: "/vue2/index"},
+                    {text: "Vue3", link: "/vue3/index"},
+                    {text: "Webpack", link: "/webpack/index"},
                     {text: "HTML 基础", link: "/html/index"},
                     {text: '综合专题', link: "/common/index"}
                 ]
             },
             {
-                text: "工具函数库",
+                text: "工具库",
                 link: '/tools/index'
             },
             {
-                text: "Node 实战",
+                text: "Node",
                 link: '/node/index'
             },
             {
-                text: "效率技巧",
+                text: "技巧",
                 link: '/tips/index'
             }
         ],
@@ -42,7 +42,7 @@ export default defineUserConfig({
                     text: 'Vue2 面试专题',
                     children: [
                         {
-                            text: "基础面试题一",
+                            text: "面试题",
                             link: "index.md"
                         },
                     ],
@@ -61,7 +61,7 @@ export default defineUserConfig({
                     text: 'Webpack 工程化',
                     children: [
                         {
-                            text: 'Webpack 面试题',
+                            text: '面试题',
                             link: 'index.md'
                         }
                     ]
@@ -69,18 +69,18 @@ export default defineUserConfig({
             ],
             '/tools/': [
                 {
-                    text: '工具库工程化',
+                    text: '工具库发布',
                     children: [
                         {
-                            text: "1、创建工具包项目",
+                            text: "创建项目",
                             link: "create.md"
                         },
                         {
-                            text: "2、发布到npm中央仓库",
+                            text: "发布到 npm",
                             link: "publish.md"
                         },
                         {
-                            text: "3.使用自定义工具包",
+                            text: "项目使用",
                             link: "use.md"
                         }
                     ],
@@ -89,42 +89,42 @@ export default defineUserConfig({
                     text: '高频手写实现',
                     children: [
                         {
-                            text: "1、函数相关",
+                            text: "函数",
                             link: "customize/function.md"
                         },
                         {
-                            text: "2、数组相关",
+                            text: "数组",
                             link: "customize/array.md"
                         },
                         {
-                            text: "3、对象相关",
+                            text: "对象",
                             link: "customize/object.md"
                         }, {
-                            text: "4、字符串相关",
+                            text: "字符串",
                             link: "customize/string.md"
                         }, {
-                            text: "5、手写DOM事件监听（带委托）",
+                            text: "DOM 事件监听",
                             link: "customize/handleDomEvent.md"
                         }, {
-                            text: "6、手写ajax请求函数",
+                            text: "Ajax 请求",
                             link: "customize/handleAjax.md"
                         }, {
-                            text: "7、手写事件总线",
+                            text: "事件总线",
                             link: "customize/handleEventBus.md"
                         }, {
-                            text: "8、手写消息订阅与发布",
+                            text: "发布订阅",
                             link: "customize/handlePubSub.md"
                         }, {
-                            text: "9、手写Promise",
+                            text: "Promise",
                             link: "customize/handlePromise.md"
                         }
                     ],
                 },
                 {
-                    text: "快速搭建在线文档网站",
+                    text: "文档搭建",
                     children: [
                         {
-                            text: "使用VuePress搭建在线文档网站",
+                            text: "VuePress 入门",
                             link: "buildVuePress.md"
                         },
                     ]
@@ -163,60 +163,58 @@ export default defineUserConfig({
             ],
             '/node/': [
                 {
-                    text: 'Node.js 实战路线',
+                    text: '基础与项目',
                     children: [
                         {
-                            text: "使用 nvm 安装 Node.js",
+                            text: "安装 Node.js",
                             link: "install.md"
                         },
                         {
-                            text: "编辑器与创建Express项目",
+                            text: "创建 Express 项目",
                             link: "express.md"
                         }, {
-                            text: "项目结构与代码解析",
+                            text: "项目结构",
                             link: "project.md"
-                        }, {
-                            text: "使用Docker运行MySQL",
+                        }
+                    ],
+                },
+                {
+                    text: '数据库与 ORM',
+                    children: [
+                        {
+                            text: "Docker + MySQL",
                             link: "docker_mysql.md"
                         }, {
-                            text: "创建数据库与数据表",
+                            text: "数据库与数据表",
                             link: "createDateBase.md"
                         }, {
-                            text: "常用SQL语句一",
+                            text: "SQL 基础一",
                             link: "curd.md"
                         }, {
-                            text: "常用SQL语句二",
+                            text: "SQL 基础二",
                             link: "curd2.md"
                         }, {
-                            text: "Sequelize ORM",
+                            text: "Sequelize",
                             link: "sequelize.md"
                         }, {
-                            text: "模型、迁移与种子",
+                            text: "模型/迁移/种子",
                             link: "model"
                         }, {
-                            text: "接口1",
-                            link: "api1.md"
-                        }, {
-                            text: "接口2",
-                            link: "api2"
-                        }, {
-                            text: "数据分页",
-                            link: "api7"
-                        }, {
-                            text: "白名单过滤表单数据",
-                            link: "api8"
-                        }, {
-                            text: "终极版：增删改查（封装响应，优化代码）",
-                            link: "api9"
-                        }, {
-                            text: "实战数据库设计",
-                            link: "database"
-                        },
-                        {
-                            text: "番外：使用prisma ORM",
+                            text: "Prisma",
                             link: "prisma"
                         }
                     ],
+                },
+                {
+                    text: '接口实战',
+                    children: [
+                        { text: "接口 1", link: "api1.md" },
+                        { text: "接口 2", link: "api2" },
+                        { text: "数据分页", link: "api7" },
+                        { text: "白名单过滤", link: "api8" },
+                        { text: "增删改查优化", link: "api9" },
+                        { text: "数据库设计", link: "database" }
+                    ]
                 }
             ],
             '/tips/': [

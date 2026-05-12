@@ -1,59 +1,57 @@
-/* Orange Docs · 小清新主题变量 */
+/* Orange Docs · Creative Aurora Theme */
 :root {
-  /* 品牌色：薄荷青 + 天空蓝 */
-  --vp-c-brand-1: #4fb3a6;
-  --vp-c-brand-2: #3b9f93;
-  --vp-c-brand-3: #2f877c;
+  --vp-c-brand-1: #7c5cff;
+  --vp-c-brand-2: #5b8dff;
+  --vp-c-brand-3: #25c6f7;
 
-  --vp-c-accent: #4fb3a6;
-  --vp-c-accent-bg: #3b9f93;
-  --vp-c-accent-hover: #2f877c;
+  --vp-c-accent: #7c5cff;
+  --vp-c-accent-bg: #5b8dff;
+  --vp-c-accent-hover: #3f7bff;
 
-  /* 背景层级 */
-  --vp-c-bg: #f5fbfa;
+  --vp-c-bg: #f7f8ff;
   --vp-c-bg-soft: #ffffff;
-  --vp-c-bg-mute: #ebf7f5;
+  --vp-c-bg-mute: #eef2ff;
 
-  /* 文字 */
-  --vp-c-text-1: #213547;
-  --vp-c-text-2: #3f5568;
-  --vp-c-text-3: #6e8497;
+  --vp-c-text-1: #1e2240;
+  --vp-c-text-2: #4b5276;
+  --vp-c-text-3: #7f86ab;
 
-  /* 边框 */
-  --vp-c-border: #d7ece8;
-  --vp-c-divider: #d7ece8;
+  --vp-c-border: #dde3ff;
+  --vp-c-divider: #dde3ff;
 
-  /* 代码块 */
-  --vp-code-block-bg: #10212a;
-  --vp-code-block-color: #e8f5ff;
+  --vp-code-block-bg: #13152a;
+  --vp-code-block-color: #e9edff;
 
-  /* 首页标题渐变 */
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: linear-gradient(120deg, #4fb3a6 10%, #7ec8e3 55%, #8a9dfc 100%);
+  --vp-home-hero-name-background: linear-gradient(120deg, #7c5cff 10%, #5b8dff 50%, #25c6f7 100%);
 
-  --od-shadow-soft: 0 12px 34px rgba(79, 179, 166, 0.12);
-  --od-shadow-card: 0 10px 26px rgba(20, 65, 88, 0.08);
+  --od-shadow-soft: 0 18px 60px rgba(124, 92, 255, 0.18);
+  --od-shadow-card: 0 12px 30px rgba(28, 37, 94, 0.12);
+  --od-glow-1: rgba(124, 92, 255, 0.35);
+  --od-glow-2: rgba(37, 198, 247, 0.28);
 }
 
 [data-theme='dark'] {
-  --vp-c-brand-1: #71d3c6;
-  --vp-c-brand-2: #55beb1;
-  --vp-c-brand-3: #39a396;
+  --vp-c-brand-1: #a896ff;
+  --vp-c-brand-2: #7ba7ff;
+  --vp-c-brand-3: #56d9ff;
 
-  --vp-c-bg: #0f1d24;
-  --vp-c-bg-soft: #14262f;
-  --vp-c-bg-mute: #1a313c;
+  --vp-c-bg: #0d1024;
+  --vp-c-bg-soft: #141936;
+  --vp-c-bg-mute: #1b2144;
 
-  --vp-c-text-1: #e9f4f8;
-  --vp-c-text-2: #c2d7e1;
-  --vp-c-text-3: #8fb0bf;
+  --vp-c-text-1: #eef1ff;
+  --vp-c-text-2: #c5ccf4;
+  --vp-c-text-3: #96a2d8;
 
-  --vp-c-border: #284350;
-  --vp-c-divider: #284350;
+  --vp-c-border: #2b356b;
+  --vp-c-divider: #2b356b;
 
-  --vp-code-block-bg: #0a151b;
-  --vp-code-block-color: #e0f2fb;
+  --vp-code-block-bg: #0a0d1d;
+  --vp-code-block-color: #dfe7ff;
 
-  --od-shadow-soft: 0 12px 34px rgba(0, 0, 0, 0.28);
-  --od-shadow-card: 0 10px 26px rgba(0, 0, 0, 0.22);
+  --od-shadow-soft: 0 20px 64px rgba(7, 11, 34, 0.58);
+  --od-shadow-card: 0 14px 34px rgba(0, 0, 0, 0.36);
+  --od-glow-1: rgba(168, 150, 255, 0.25);
+  --od-glow-2: rgba(86, 217, 255, 0.22);
 }
