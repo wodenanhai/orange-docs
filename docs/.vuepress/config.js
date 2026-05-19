@@ -14,6 +14,10 @@ export default defineUserConfig({
         colorMode: 'auto',
         navbar: [
             {
+                text: "JAVA",
+                link: '/java/index'
+            },
+            {
                 text: "面试题",
                 children: [
                     {text: "Vue2", link: "/vue2/index"},
@@ -223,6 +227,21 @@ export default defineUserConfig({
                     link: "index.md"
                 }
             ],
+            '/java/': [
+                {
+                    text: 'JAVA零基础',
+                    children: [
+                        { text: "JDK是什么？", link: "jdk.md" },
+                    ]
+                }
+                // {
+                //     text:"JAVA SE进阶",
+                //     children: [
+                //         { text: "JDK是什么", link: "jdk.md" },
+                //     ]
+                // }
+            ],
+
         },
     }),
     lang: "zh-CN",
